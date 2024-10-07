@@ -16,22 +16,111 @@ h1 {
 
 h2 {
     font-size: 1.4rem;
+    margin: 0;
+}
+
+.container {
+    margin: 0 1rem;
 }
 
 .containerGreen {
     background: #02A28F;
     color: #FFFFFF;
-    text-align: center;
+    border-radius: 10px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
 }
 
-#header {
-    padding: 0.8rem 0;
+.containerGreen h2 {
+    margin: 0 2rem;
+}
+
+#post-recent {
+    justify-content: space-between;
+}
+
+#post-recent h2, p {
+    margin: 1rem 2rem;
+}
+
+.header {
+    border-radius: 0;
+    height: 70px;
+    margin: 0 0 2rem 0;
 }
 
 .article img {
-    width: 100vw;
+    width: 100%;
 }
 
 .card img {
-    width: 100vw;
+    width: 100%;
+}
+
+.card-subtitle {
+    color: #02A28F;
+}
+
+.textCard {
+    margin-bottom: 3rem;
+}
+
+.card-recents {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem 4rem 1rem;
+}
+
+.card-recents img {
+    width: 40%;
+}
+
+#category {
+    font-size: 1.1rem;
+    color: #616161;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#category p:nth-child(even) {
+    text-align: right;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 767px)  {
+    #grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .containerCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .g1 {
+        grid-area: 2/1;
+    }
+
+    .card-recents {
+        margin: 0 1rem 1rem 1rem;
+    }
+    .header:first-child {
+        justify-content: left;
+        padding-left: 2rem;
+    }
 }
